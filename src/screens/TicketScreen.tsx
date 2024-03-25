@@ -6,6 +6,7 @@ import {
   StatusBar,
   ImageBackground,
   Image,
+  ScrollView
 } from 'react-native';
 import EncryptedStorage from 'react-native-encrypted-storage';
 import AppHeader from '../components/AppHeader';
@@ -54,7 +55,7 @@ const TicketScreen = ({navigation, route}: any) => {
     );
   }
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <StatusBar hidden />
       <View style={styles.appHeaderContainer}>
         <AppHeader
@@ -132,7 +133,7 @@ const TicketScreen = ({navigation, route}: any) => {
           />
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
